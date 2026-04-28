@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #00f3ff;
+  --color-neon-magenta: #ff00ff;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: #fff;
+  overflow: hidden;
+}
+
+.neon-cyan {
+  color: var(--color-neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.7);
+}
+
+.neon-magenta {
+  color: var(--color-neon-magenta);
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+.neon-border {
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+.bg-panel {
+  background: rgba(20, 20, 22, 0.8);
+  backdrop-filter: blur(10px);
+}
